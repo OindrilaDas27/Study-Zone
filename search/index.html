@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Wikipedia Search App Demo - Freshman.tech</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <header class="header">
+        <img
+          class="logo"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/657px-Wikipedia-logo-v2.svg.png"
+          alt="Wikipedia Logo"
+          width="150"
+          height="137"
+        />
+
+        <form class="search-form js-search-form">
+          <input
+            placeholder="Type a keyword and press Enter to search"
+            type="search"
+            class="search-input js-search-input"
+            autofocus
+          />
+        </form>
+      </header>
+
+      <div class="loading-indicator">
+        <div class="sk-chase js-spinner hidden">
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+        </div>
+      </div>
+
+      <section class="search-results js-search-results"></section>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
