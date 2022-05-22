@@ -112,7 +112,7 @@ body {
 }
 
 .card__heading {
-  color: #5D8BF4;
+  color: #5d8bf4;
   font-size: 1.9rem;
   text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
   line-height: 1.4;
@@ -136,8 +136,18 @@ body {
   text-shadow: 2px 2px rgb(105, 145, 197);
 }
 
-#date-time{
+/* #date-time {
   position: absolute;
   top: 30px;
   left: 1500px;
+} */
+.clock {
+  position: absolute;
+  top: 17%;
+  left: 80%;
+  transform: translateX(-50%) translateY(-50%);
+  color: rgb(105, 145, 197);
+  font-size: 2rem;
+  font-family: Orbitron;
+  /* letter-spacing: 5px; */
 }

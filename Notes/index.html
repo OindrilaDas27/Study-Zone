@@ -9,6 +9,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript">
+    $("#submit-button").live("click", function () {
+        var YourNote = $("#fnotes").val();
+        var saveData = (function () {
+        var a = document.createElement("a");
+        return function (data, fileName) {
+    var json = JSON.stringify(data),
+        blob = new Blob([json], {type: "octet/stream"}),
+        url = window.URL.createObjectURL(blob);
+    a.href = url;
+    a.download = fileName;
+    a.click();
+    window.URL.revokeObjectURL(url);
+};
+}());
+
+var data = { YourNote },
+    fileName = "my-download.txt";
+
+saveData(data, fileName);
+    });
+</script>
 </head>
 
 <body> 
@@ -20,7 +43,7 @@
             <textarea id="fnotes" name="w3review" rows="24" cols="50" placeholder="Your notes goes here"></textarea>
         </div>
         <div id="export">
-            <button id="submit-button" type="submit" pys-onClick="export_notes" onclick="generatePDF()">SAVE</button>
+            <button id="submit-button" type="submit" pys-onClick="export_notes" >SAVE</button>
         </div>
         <div class="right" id="test-output"></div>
     </div>
