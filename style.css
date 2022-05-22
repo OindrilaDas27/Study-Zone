@@ -1,6 +1,6 @@
 :root {
   --background-dark: #5fccdc;
-  --text-light: rgba(255, 255, 255, 0.6);
+  --text-light: rgba(255, 255, 255, 0.968);
   --text-lighter: rgba(255, 255, 255, 0.9);
   --spacing-s: 8px;
   --spacing-m: 16px;
@@ -26,7 +26,7 @@ html {
 
 body {
   padding: 5rem 0rem;
-  background-image: linear-gradient(15deg, #5cf1ff 0%, #af79ff 150%);
+  background-image: linear-gradient(15deg, #bbc9ff 0%, #ffe0b1 100%);
 }
 
 .hero-section {
@@ -37,6 +37,7 @@ body {
   min-height: 100%;
   justify-content: center;
   padding: var(--spacing-xxl) var(--spacing-s);
+  margin-top: -30px;
 }
 
 .card-grid {
@@ -78,7 +79,7 @@ body {
   background-position: center;
   border-radius: var(--spacing-l);
   bottom: 0;
-  filter: brightness(0.75) saturate(1.2) contrast(0.85);
+  filter: brightness(1) saturate(1.2) contrast(0.85);
   left: 0;
   position: absolute;
   right: 0;
@@ -93,14 +94,14 @@ body {
 }
 
 .card-grid:hover > .card:not(:hover) .card__background {
-  filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+  filter: brightness(1) saturate(1) contrast(1.2) blur(5px);
 }
 
 .card__content {
   left: 0;
-  padding: var(--spacing-l);
+  padding: var(--spacing-s);
   position: absolute;
-  top: 0;
+  bottom: 0;
 }
 
 .card__category {
@@ -111,11 +112,12 @@ body {
 }
 
 .card__heading {
-  color: var(--text-lighter);
+  color: #5D8BF4;
   font-size: 1.9rem;
   text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
   line-height: 1.4;
-  word-spacing: 100vw;
+  /* word-spacing: 100vw; */
+  /* font-weight: 500px !important; */
 }
 .HEAD {
   display: flex;
@@ -131,4 +133,5 @@ body {
   /* font-family: "Sacramento", cursive; */
   font-size: 8rem;
   color: var(--text-lighter);
+  text-shadow: 2px 2px rgb(105, 145, 197);
 }
