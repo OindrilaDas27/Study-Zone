@@ -143,11 +143,11 @@ body {
 } */
 .clock {
   position: absolute;
-  top: 17%;
-  left: 80%;
+  top: 20%;
+  left: 85%;
   transform: translateX(-50%) translateY(-50%);
   color: rgb(105, 145, 197);
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: Orbitron;
   /* letter-spacing: 5px; */
 }
