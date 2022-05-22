@@ -4,11 +4,13 @@
   <meta charset="UTF-8"/>
   <title>CodePen - CSS Filter Cards</title>
   <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="./timer.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Sacramento&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
   <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
 </head>
 <body>
@@ -21,14 +23,14 @@
 
 <section class="hero-section">
   <div class="card-grid">
-    <a class="card" href="#">
+    <a class="card" href="search/index.html">
       <div class="card__background" style="background-image: url(https://media.istockphoto.com/vectors/people-using-search-box-for-query-vector-id1279128074?k=20&m=1279128074&s=612x612&w=0&h=UxPxkSiOfkxkTyny90zs6uNZ4QIjnMuI1m1-HBbFEiE=)"></div>
       <div class="card__content">
         <!-- <p class="card__category">Category</p> -->
         <h3 class="card__heading">SEARCH</h3>
       </div>
     </a>
-    <a class="card" href="#">
+    <a class="card" href="pomodoro/index.html">
       <div class="card__background" style="background-image: url(https://t3.ftcdn.net/jpg/03/92/84/62/360_F_392846240_EtnG0eXfiHFgRnxRddmw7pKJsHFGrQDw.jpg)"></div>
       <div class="card__content">
         <!-- <p class="card__category">Category</p> -->
@@ -42,7 +44,7 @@
         <h3 class="card__heading">CHILL BEATS</h3>
       </div>
     </li>
-    <a class="card" href="">
+    <a class="card" href="Notes/index.html">
       <div class="card__background" style="background-image: url(https://img.freepik.com/free-vector/take-note-diary-flat-design-illustration_183665-103.jpg)"></div>
       <div class="card__content">
         <!-- <p class="card__category">Category</p> -->
@@ -54,16 +56,20 @@
 <!-- partial -->
  
 <div id = "date-time">
-<py-script>  
-  from datetime import date
-  from datetime import datetime
-  today = date.today()
-  now = datetime.now()
-  d2 = today.strftime("%B %d, %Y")
-  print("Today is ", d2)
-  dt_string = now.strftime("%H:%M:%S")
-  print("The time is", dt_string)
-</py-script> 
-</div>
+  <py-script class="clock">  
+    from datetime import date
+    import calendar
+    from datetime import datetime
+    curr_date=date.today()
+    
+    join=calendar.day_name[curr_date.weekday()];
+    today = date.today()
+    now = datetime.now()
+    join+=", "+today.strftime("%B %d, %Y")
+    
+    print(join)
+    <!-- <p id="clock">join</p> -->
+  </py-script> 
+  </div>
 </body>
 </html>
