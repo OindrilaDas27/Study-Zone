@@ -41,7 +41,7 @@
         <h3 class="card__heading">CHILL BEATS</h3>
       </div>
     </li>
-    <a class="card" href="#">
+    <a class="card" href="">
       <div class="card__background" style="background-image: url(https://img.freepik.com/free-vector/take-note-diary-flat-design-illustration_183665-103.jpg)"></div>
       <div class="card__content">
         <!-- <p class="card__category">Category</p> -->
@@ -51,6 +51,18 @@
   <div>
 </section>
 <!-- partial -->
-  
+ 
+<div id = "date-time">
+<py-script>  
+  from datetime import date
+  from datetime import datetime
+  today = date.today()
+  now = datetime.now()
+  d2 = today.strftime("%B %d, %Y")
+  print("Today is ", d2)
+  dt_string = now.strftime("%H:%M:%S")
+  print("The time is", dt_string)
+</py-script> 
+</div>
 </body>
 </html>
