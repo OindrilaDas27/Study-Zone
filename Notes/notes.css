@@ -21,3 +21,13 @@
 body, html {height:100%;
     overflow: hidden;
 }
+
+#submit-button{
+    position: absolute;
+    top: 200px;
+    left: 70px;
+    background-color: rgb(170, 154, 154);
+    height: 60px;
+    width: 80px;
+    border-radius: 10px;
+}
