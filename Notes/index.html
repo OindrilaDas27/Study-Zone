@@ -1,0 +1,34 @@
+<head>
+    <title>Notes | Autosave on</title>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <link rel="stylesheet" href="./notes.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+</head>
+
+<body>  
+    <div id="sidebar">
+        
+    </div>
+    <div id="notes">
+        <textarea id="fnotes" name="w3review" rows="24" cols="50">
+            Your notes goes here
+        </textarea>
+    </div>
+    <div id="export">
+        <button id="submit-button" type="submit" pys-onClick="export_notes">EXPORT</button>
+    </div>
+    <div id="test-output"></div>
+<py-script>
+from js import console
+import sys
+def export_notes(*args, **kwargs):
+    console.log(f'args: {args}')
+    console.log(f'kwargs: {kwargs}')
+    text = Element('fnotes').element.value
+    console.log(f'text: {text}')
+    Element('test-output').element.innerText = text
+    sys.stdout = open('file', 'w')
+    print('test')
+    sys.stdout.close()
+</py-script>
+</body>

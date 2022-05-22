@@ -1,0 +1,33 @@
+#sidebar{
+    position: relative;
+    background-color: rgb(206, 202, 202);
+    height:100%;
+    width: 230px;
+}
+
+#fnotes{
+    position: absolute;
+    left: 250px;
+    top: 0px;
+    margin-left: 0px;
+    padding-left: 0px;
+    width: 1030px;
+    height: 45000px;
+    /* font-size: 30pt; */
+    height: fit-content;
+    overflow-y: scroll;
+}
+
+body, html {height:100%;
+    overflow: hidden;
+}
+
+#submit-button{
+    position: absolute;
+    top: 200px;
+    left: 70px;
+    background-color: rgb(170, 154, 154);
+    height: 60px;
+    width: 80px;
+    border-radius: 10px;
+}
