@@ -1,0 +1,9 @@
+{
+  "manifest_version": 3,
+  "name": "new tab overide",
+  "description": "This extensions demonstrates how to override the new tab page.",
+  "version": "1.0",
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  }
+}
