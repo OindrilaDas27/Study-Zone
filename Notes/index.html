@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Bootstrap CSS-->
+        <link
+        rel="=stylesheet"
+        href="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        />
+
+            <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!--My JS-->
+    <script src="main.js"></script> <!--yet ro be created-->
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="timer.css"/>
+
+
+     <!-- Font Awesome -->
+     <script src="https://kit.fontawesome.com/83ce334a1c.js" crossorigin="anonymous"></script>
+
+
+     <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;900&family=Island+Moments&display=swap" rel="stylesheet">
+
+
+
+    <title>Pomodoro timer</title>
+         
+    
+  </head>
+  <body onload="template()">
+
+    <div class="container">
+        <!--Heading text-->
+        <h1 class="text-center my-5 heading">Head txt</h1>
+
+        <!--clock-->
+        <div class="container timer">
+            <div class ="row">
+                <div class="col-5">
+                    <h4 id="minutes"></h4>
+                </div>
+
+                <div class="col-2">
+                  <h4>:</h4>
+              </div>
+
+              <div class="col-5">
+                <h4 id="seconds"></h4>
+            </div>
+
+            </div>
+        </div>
+
+         <!-- Finished Message -->
+      <div class="my-5">
+        <h3 id="done" class="text-center"></h3>
+      </div>
+
+        <!-- Finished Message -->
+        <div class="my-5">
+          <h3 id="done" class="text-center"></h3>
+        </div>
+
+        <!--buttons-->
+        <div class="container">
+          <button class=""btn"><i class="fa-thin fa-circle-play fa-2x"></i></button>
+          <a href="index.html"><i class="fas fa-redo-alt fa-2x"></i></a>
+        </div>
+
+    </div>
+    
+   
+  </body>
+</html>
