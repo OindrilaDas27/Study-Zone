@@ -3,31 +3,40 @@
     <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
     <link rel="stylesheet" href="./notes.css" />
     <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <script src="./notes.js"></script>
+    <script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script> 
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
 </head>
 
-<body>  
-    <div id="sidebar">
-        
+<body> 
+    <div class="heading">Add your Notes</div>
+    
+    <div class="content">    
+        <div id="sidebar"></div>
+        <div id="notes">
+            <textarea id="fnotes" name="w3review" rows="24" cols="50">
+                Your notes goes here
+            </textarea>
+        </div>
+        <div id="export">
+            <button id="submit-button" type="submit" pys-onClick="export_notes" onclick="generatePDF()">EXPORT</button>
+        </div>
+        <div id="test-output"></div>
     </div>
-    <div id="notes">
-        <textarea id="fnotes" name="w3review" rows="24" cols="50">
-            Your notes goes here
-        </textarea>
-    </div>
-    <div id="export">
-        <button id="submit-button" type="submit" pys-onClick="export_notes">EXPORT</button>
-    </div>
-    <div id="test-output"></div>
+    
 <py-script>
 from js import console
 import sys
 def export_notes(*args, **kwargs):
     console.log(f'args: {args}')
     console.log(f'kwargs: {kwargs}')
-    text = Element('fnotes').element.value
+    text=Element('fnotes').element.value
     console.log(f'text: {text}')
     Element('test-output').element.innerText = text
-    sys.stdout = open('file', 'w')
+    sys.stdout=open('file', 'w')
     print('test')
     sys.stdout.close()
 </py-script>

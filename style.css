@@ -135,3 +135,9 @@ body {
   color: var(--text-lighter);
   text-shadow: 2px 2px rgb(105, 145, 197);
 }
+
+#date-time{
+  position: absolute;
+  top: 30px;
+  left: 1500px;
+}
