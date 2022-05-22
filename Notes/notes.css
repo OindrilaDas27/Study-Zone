@@ -12,9 +12,10 @@ body {
     display: flex;
     justify-content: center;
     padding: 30px 0;
-    font-family: 'Kalam', cursive;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
     font-size: 50px;
-    color: white;
+    color: #ffffff;
     text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -31,6 +32,8 @@ body {
     height:100%;
     width: 230px;
     background-color: #bbc9ff;
+    border-radius: 30px 0 0 0;
+    /* /* box-shadow: 5px 0 0px 7px rgba(79, 75, 62, 0.75); */
 }
 
 #fnotes{
@@ -38,7 +41,7 @@ body {
     left: 250px;
     top: 0px;
     margin-left: 0px;
-    padding-left: 0px;
+    padding-left: 20px;
     width: 1030px;
     height: 45000px;
     font-family: 'Courier New', Courier, monospace;
@@ -47,10 +50,12 @@ body {
     height: fit-content;
     overflow-y: scroll;
     background-image: white;
+    box-shadow: 4px 4px 0px 0 rgba(79, 75, 62, 0.75);
 }
 
 textarea {
     padding-top: 20px;
+    padding-left: 20px;
 }
 /* body, html {height:100%;
     overflow: hidden;
@@ -58,11 +63,22 @@ textarea {
 
 #submit-button{
     position: absolute;
-    top: 200px;
+    top: 300px;
     left: 70px;
     background-color: rgb(170, 154, 154);
     height: 60px;
-    width: 80px;
-    border-radius: 10px;
+    width: 90px;
+    border-radius: 30px;
     background-color: #ffe0b1;
+    letter-spacing: 2px;
+    box-shadow: 15px 0 15px 0 rgba(79, 75, 62, 0.75);
+}
+
+.right {
+    padding-top: 20px;
+    padding-left: 20px;
+    background-color: rgba(255, 255, 255, 0.25);
+    width: 300px;
+    border-radius: 0 30px 0 0;
+    box-shadow: 10px 0 10px 0 rgba(79, 75, 62, 0.75);
 }

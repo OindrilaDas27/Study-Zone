@@ -1,6 +1,14 @@
 body{
   background-color: #000;
+  /* background-image: url(https://i.pinimg.com/564x/75/90/07/759007c0f2d8f959a3cd1af42a47dba7.jpg) !important; */
+  /* background-position: relative; */
+  /* background-repeat: no-repeat; */
+  /* background-size: fit; */
+  /* bottom: 0%; */
+  /* right: 50%; */
 }
+
+
 
 button {
   padding: 1.3em 3em;

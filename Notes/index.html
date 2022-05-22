@@ -17,14 +17,12 @@
     <div class="content">    
         <div id="sidebar"></div>
         <div id="notes">
-            <textarea id="fnotes" name="w3review" rows="24" cols="50">
-                Your notes goes here
-            </textarea>
+            <textarea id="fnotes" name="w3review" rows="24" cols="50" placeholder="Your notes goes here"></textarea>
         </div>
         <div id="export">
-            <button id="submit-button" type="submit" pys-onClick="export_notes" onclick="generatePDF()">EXPORT</button>
+            <button id="submit-button" type="submit" pys-onClick="export_notes" onclick="generatePDF()">SAVE</button>
         </div>
-        <div id="test-output"></div>
+        <div class="right" id="test-output"></div>
     </div>
     
 <py-script>
